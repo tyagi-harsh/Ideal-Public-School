@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+   <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -74,28 +75,30 @@
 
 </head>
 
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar sticky-top shadow-sm ">
         <div class="container-fluid d-flex justify-content-between align-items-center px-3">
 
-            <a class=" navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="resources/logocrop_200x200.png" alt="Logo" class="nav-logo" />
                 Ideal Public School
             </a>
 
             <!-- Desktop Nav Buttons -->
             <div class="d-none d-lg-flex gap-3">
-                <a class="nav-btn" href="home.html">Home</a>
+                <a class="nav-btn " href="home.html">Home</a>
                 <a class="nav-btn" href="aboutus.html">About Us</a>
                 <a class="nav-btn" href="admission.html">Admission</a>
                 <a class="nav-btn" href="gallery.html">Gallery</a>
-                <a class="nav-btn" href="certificates.html"">Documents</a>
+                <a class="nav-btn" href="certificates.html">Documents</a>
                 <a class="nav-btn" href="contactus.html">Contact Us</a>
             </div>
+
             <!-- Hamburger Icon for Mobile -->
-            <button class="hamburger d-lg-none" id="hamburger" type="button" aria-label="Open navigation">
+            <button class="hamburger d-lg-none" id="hamburger">
                 <span style="background-color:white;"></span>
                 <span style="background-color:white;"></span>
                 <span style="background-color:white;"></span>
@@ -105,85 +108,158 @@
 
     <!-- Sidebar Navigation for Mobile -->
     <div id="sidebar" class="sidebar">
-        <a href="home.html" class="nav-btn " onclick="sidebarNavClose()">Home</a>
-        <a href="aboutus.html" class="nav-btn" onclick="sidebarNavClose()">About Us</a>
-        <a href="admission.html" class="nav-btn" onclick="sidebarNavClose()">Admission</a>
-        <a href="gallery.html" class="nav-btn" onclick="sidebarNavClose()">Gallery</a>
-        <a href="certificates.html" class="nav-btn"  onclick="sidebarNavClose()">Documents</a>
-        <a href="contactus.html" class="nav-btn" onclick="sidebarNavClose()">Contact Us</a>
+        <a href="home.html" class="nav-btn ">Home</a>
+        <a href="aboutus.html" class="nav-btn ">About Us</a>
+        <a href="admission.html" class="nav-btn">Admission</a>
+        <a href="gallery.html" class="nav-btn">Gallery</a>
+        <a href="certificates.html" class="nav-btn">Documents</a>
+        <a href="contactus.html" class="nav-btn">Contact Us</a>
     </div>
-
 
     <!-- Overlay -->
     <div id="overlay" class="overlay"></div>
+   
+   <!-- main -->
+   <div class="main">
+
+   <div class="container-fluid page-header">
+            
+                <span class="sp">Certificates / Documents</span>
+        
+        </div>
 
 
-    <h3>Affiliation Letter</h3>
+   <style>
+    .main{
+        padding: 20px;
+    }
 
-
-    <div class="">
-        <iframe src="xyz.pdf#toolbar=0" class="custom-iframe" title="PDF"></iframe>
-    </div>
-    <style>
-        .custom-iframe {
-            width: 90%;
-            height: 600px;
-            border: none;
-            margin-left: 70px;
-
-        }
-
-        h3 {
+        
+   .sp {
+            display: flex;
+            justify-content: center;
             text-align: center;
             margin-top: 20px;
-            font-size: 2rem;
-            color: maroon;
-
+            font-size: 1.5rem;
+            color: rgb(111, 22, 22);
+            background: linear-gradient(to right, #ffffff00 3%, #ffffff, #ffffff00 );
             margin-bottom: 20px;
-        }
+            border-radius: 0px;
+            padding: 5px;
+            font-weight: 500;
+            animation: slideText 1.6s ease-out;
+            
 
-        @media (max-width: 950px) {
-            .custom-iframe {
-                width: 100%;
-                height: 500px;
-                margin-left: 0;
             }
-        }
 
-        .btnx{
-            margin-left: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            background-color: rgb(145, 0, 0);
-            color: white;
-            border: solid;
-            border-color: maroon !important;
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-            width: 130px;
-            border-radius: 20px;
-        }
-        .btnx:hover {
-            background-color: rgb(255, 255, 255);
-            color: #800000;
-        }
-    </style>
-
-
-    <div>
-        <button class="btn btnx" onclick="window.open('certificates.html', '_self')"><< Back </button>
+        
+    .page-header {
+            background: url('resources/docss.jpg') center center / cover no-repeat;
+            padding: 100px 0;
+            color: maroon;
+            border-radius: 10px;
+            width: 100%;
+            height: 300px;
+            
     
-    </div>
+    }
+
+    .c-section {
+        padding: 60px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        border-top: dotted;
+        border-bottom: dotted;
+        border-color: rgba(70, 70, 70, 0.363);
+        border-width: 3px;
+        border-radius:0px;
+
+        
+    }
+
+    .c-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .btnc{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(245, 202, 202);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 15px;
+        transition: 0.3s ease-out;
+        color: maroon;
+        border-color: maroon;
+        border: 2px solid;
+    }
+
+    .btnc:hover {
+        transform: scale(1.06);
+    }
+   .btnc> img{
+        height: 40px;
+        width: 40px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+       
+
+        
+    }
 
 
+   </style>
 
+   <div class="c-section">
 
+                    <div class="c-grid" id="grid-container">
+                        <button class="btn btnc btn-danger" onclick="window.open('fee-structure.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Fee Structure</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('annual-academic-calendar.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Annual Academic Calender</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('list-of-smc.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">List Of School Management Committee (SMC)</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('list-of-pta.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">List Of PTA Members</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('last-three-year-of-board.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Last Three-Year Result of The Board Examination</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('affiliation-letter.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Affiliation Letter</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('trust-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Trust Certificate</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('noc.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">NOC</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('recognition-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Recognition Certificate</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('building-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Building Certificate</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('fire-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Fire Certificate</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('deo-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">DEO Certificate</button>
+                            <button class="btn btnc btn-danger" onclick="window.open('water-health-certificate.html', '_blank')"
+                                target="_blank"><img src="resources/application.png" alt="x">Water Health Certificate</button>
 
+                    </div>
+                </div>
 
-    <footer class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+   </div>
+
+    
+   
+   
+   
+   
+
+   
+   <footer class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <!-- Logo and Name -->
@@ -198,12 +274,12 @@
                     <a class="btn btn-link" href="admission.html">Admission</a>
                     <a class="btn btn-link" href="gallery.html">Gallery</a>
                     <div class="d-flex mt-4 pt-2">
-                        <a class="btn btn-square btn-outline-primary me-2" href="#" title="Twitter"><i
+                        <a class="btn btn-square btn-outline-primary me-2" href="#"><i
                                 class="fa-brands fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-2" href="#" title="Facebook"><i
+                        <a class="btn btn-square btn-outline-primary me-2" href="#"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-2" href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-primary" href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-primary" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <!-- Quick Links -->
@@ -238,7 +314,7 @@
                         © 2025 <a href="home.html">Ideal Public School</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        Designed By <a href="https://www.globalbinarytech.com/" target="_blank" rel="noopener">Global Binary
+                        Designed By <a href="https://www.globalbinarytech.com/" target="_blank">Global Binary
                             Tech</a>
                     </div>
                 </div>

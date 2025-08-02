@@ -1,2 +1,2 @@
 # Ideal-Public-School
-Ideal Public School official website: HTML, CSS, Bootstrap, JS.
+School website ( maroon and white)

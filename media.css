@@ -190,5 +190,15 @@
     
 }
 
+@media (max-width: 1180px) and (min-width: 768px) {
+    .img-fluid {
+        max-width: 150px;
+        max-height: 150px;
+    }
+   .nav1{
+    font-size: 0.7rem !important;
+   }
+}
+
 
   

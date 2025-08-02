@@ -2,20 +2,78 @@
 <html lang="en">
 
 <head>
+    <!-- Character Set Declaration -->
+    <!-- Specifies the character encoding for the document. UTF-8 is the universal standard. -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Certificate</title>
 
+    <!-- Viewport Meta Tag for Responsive Design -->
+    <!-- Ensures proper rendering and touch zooming on all devices, especially mobile. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title (Already present, but good to reiterate its importance) -->
+    <!-- Appears in browser tab, search results, and bookmarks. -->
+    <title>Ideal Public School - Come to Learn, Go to Serve</title>
+
+    <!-- Meta Description for SEO -->
+    <!-- A concise summary of the page's content. Appears in search engine results. -->
+    <meta name="description" content="Ideal Public School, Talheri Buzurg, Saharanpur. Committed to quality CBSE education, holistic development, and nurturing responsible global citizens. Admissions open.">
+
+    <!-- Meta Keywords for SEO (Less critical for modern SEO, but can still be included) -->
+    <!-- A list of keywords relevant to the page's content. -->
+    <meta name="keywords" content="Ideal Public School, Talheri Buzurg, Saharanpur, CBSE school, quality education, holistic development, admissions, best school Saharanpur, UP schools">
+
+    <!-- Author Meta Tag -->
+    <!-- Specifies the author of the document. -->
+    <meta name="author" content="Ideal Public School / Global Binary Tech">
+
+    <!-- Favicon -->
+    <!-- Defines the icon that appears in the browser tab, bookmarks, etc. -->
+    <!-- Replace 'resources/favicon.ico' or 'resources/favicon.png' with your actual favicon path -->
+    <link rel="icon" href="resources/logocrop_200x200.png" type="image/png">
+    <link rel="shortcut icon" href="resources/logocrop_200x200.png" type="image/png">
+
+    <!-- Open Graph Meta Tags for Social Media Sharing (Facebook, LinkedIn, etc.) -->
+    <!-- Provides rich previews when your page is shared on social media. -->
+    <meta property="og:title" content="Ideal Public School - Quality Education & Holistic Development">
+    <meta property="og:description" content="Ideal Public School, Talheri Buzurg, Saharanpur. Committed to quality CBSE education, holistic development, and nurturing responsible global citizens. Admissions open.">
+    <meta property="og:image" content="https://www.ideal-publicschool.com/resources/logocrop_200x200.png"> <!-- Use an absolute URL for the image -->
+    <meta property="og:url" content="https://www.ideal-publicschool.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ideal Public School">
+
+    <!-- Twitter Card Meta Tags for Twitter Sharing -->
+    <!-- Provides rich previews when your page is shared on Twitter. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@your_twitter_handle"> <!-- Replace with your school's Twitter handle if available -->
+    <meta name="twitter:creator" content="@your_twitter_handle"> <!-- Replace with your school's Twitter handle if available -->
+    <meta name="twitter:title" content="Ideal Public School - Come to Learn, Go to Serve">
+    <meta name="twitter:description" content="Ideal Public School, Talheri Buzurg, Saharanpur. Committed to quality CBSE education, holistic development, and nurturing responsible global citizens. Admissions open.">
+    <meta name="twitter:image" content="https://www.ideal-publicschool.com/resources/logocrop_200x200.png"> <!-- Use an absolute URL for the image -->
+
+    <!-- Theme Color for Mobile Browsers (e.g., Chrome on Android) -->
+    <!-- Sets the color of the browser's theme UI. -->
+    <meta name="theme-color" content="#800000"> <!-- Maroon color from your site -->
+
+    <!-- Robots Meta Tag (Optional - controls search engine crawling and indexing) -->
+    <!-- 'index, follow' is the default behavior, so this tag is often omitted unless you want to change it. -->
+    <!-- Example: <meta name="robots" content="noindex, nofollow"> to prevent indexing -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Link to your CSS files (already present, but included for completeness of <head> content) -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="admission.css" />
+    <link rel="stylesheet" href="contact.css" />
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Lobster&family=Orbitron:wght@500&family=Playfair+Display:wght@600&display=swap"
-        rel="stylesheet">
+    <!-- Link to external CSS libraries (already present, but included for completeness) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&family=Lobster&family=Orbitron:wght@500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
+
 
 <body>
 
@@ -23,22 +81,22 @@
     <nav class="navbar sticky-top shadow-sm ">
         <div class="container-fluid d-flex justify-content-between align-items-center px-3">
 
-            <a class=" logo1 navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="resources/logocrop_200x200.png" alt="Logo" class="nav-logo" />
                 Ideal Public School
             </a>
 
             <!-- Desktop Nav Buttons -->
-            <div class=" nav1 d-none d-lg-flex gap-3">
-                <a class="nav-btn active" href="home.html">Home</a>
+            <div class="d-none d-lg-flex gap-3">
+                <a class="nav-btn" href="home.html">Home</a>
                 <a class="nav-btn" href="aboutus.html">About Us</a>
                 <a class="nav-btn" href="admission.html">Admission</a>
                 <a class="nav-btn" href="gallery.html">Gallery</a>
+                <a class="nav-btn" href="certificates.html"">Documents</a>
                 <a class="nav-btn" href="contactus.html">Contact Us</a>
             </div>
-
             <!-- Hamburger Icon for Mobile -->
-            <button class="hamburger d-lg-none" id="hamburger">
+            <button class="hamburger d-lg-none" id="hamburger" type="button" aria-label="Open navigation">
                 <span style="background-color:white;"></span>
                 <span style="background-color:white;"></span>
                 <span style="background-color:white;"></span>
@@ -48,12 +106,14 @@
 
     <!-- Sidebar Navigation for Mobile -->
     <div id="sidebar" class="sidebar">
-        <a href="home.html" class="nav-btn active">Home</a>
-        <a href="aboutus.html" class="nav-btn">About Us</a>
-        <a href="aboutus.html" class="nav-btn">Admission</a>
-        <a href="gallery.html" class="nav-btn">Gallery</a>
-        <a href="contact.html" class="nav-btn">Contact Us</a>
+        <a href="home.html" class="nav-btn" onclick="sidebarNavClose()">Home</a>
+        <a href="aboutus.html" class="nav-btn" onclick="sidebarNavClose()">About Us</a>
+        <a href="admission.html" class="nav-btn" onclick="sidebarNavClose()">Admission</a>
+        <a href="gallery.html" class="nav-btn" onclick="sidebarNavClose()">Gallery</a>
+        <a href="certificates.html" class="nav-btn"  onclick="sidebarNavClose()">Documents</a>
+        <a href="contactus.html" class="nav-btn" onclick="sidebarNavClose()">Contact Us</a>
     </div>
+
 
     <!-- Overlay -->
     <div id="overlay" class="overlay"></div>
@@ -90,7 +150,33 @@
                 margin-left: 0;
             }
         }
+   .btnx{
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(145, 0, 0);
+            color: white;
+            border: solid;
+            border-color: maroon !important;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            width: 130px;
+            border-radius: 20px;
+        }
+        .btnx:hover {
+            background-color: rgb(255, 255, 255);
+            color: #800000;
+        }
     </style>
+
+
+    <div>
+        <button class="btn btnx" onclick="window.open('certificates.html', '_self')"><< Back </button>
+    
+    </div>
 
 
 

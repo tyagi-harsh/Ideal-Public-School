@@ -29,3 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 });
+
+// Highlight active nav button based on current page
+
+document.addEventListener('DOMContentLoaded', function() {
+    const currentPath = window.location.pathname.split('/').pop(); // Gets 'home.html', 'aboutus.html', etc.
+    const navButtons = document.querySelectorAll('.nav-btn'); // Selects all desktop and mobile nav buttons
+
+    navButtons.forEach(button => {
+        // Remove existing active classes first (important for mobile sidebar if it's open)
+        button.classList.remove('active');
+
+        // Check if the button's href matches the current page
+        if (button.getAttribute('href') === currentPath) {
+            button.classList.add('active');
+        }
+    });
+});
+
+
+
+
